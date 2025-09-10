@@ -4,8 +4,9 @@
   font-weight: 500;
   line-height: 1.25;
   color: #003058;
+  background: #fff;
   background-color: #ffffff;
-  max-width: 990px;
+  max-width: 731px;
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
@@ -181,26 +182,6 @@
     padding: 0;
   }
 }
-@container es-rc-content (min-width: 768px) {
-  #es-rc #es-rc-content .es-kv__right__textCtn {
-    max-width: 420px;
-    margin-right: auto;
-    margin-left: 15%;
-  }
-  #es-rc #es-rc-content .es-kv__right__title {
-    font-size: 40px;
-    width: 100%;
-    margin-left: 0;
-  }
-  #es-rc #es-rc-content .es-kv__right__text {
-    font-size: 20px;
-  }
-}
-@container es-rc-content (min-width: 880px) {
-  #es-rc #es-rc-content .es-kv__right__textCtn {
-    margin-left: 20%;
-  }
-}
 #es-rc #es-rc-content .es-features {
   background-color: #46d7ac;
   color: #ffffff;
@@ -331,46 +312,6 @@
     top: 0;
   }
 }
-@container es-rc-content (min-width: 768px) {
-  #es-rc #es-rc-content .es-features {
-    padding: 32px;
-  }
-  #es-rc #es-rc-content .es-features__bg {
-    width: 100%;
-  }
-  #es-rc #es-rc-content .es-features__bg__image {
-    min-height: -moz-max-content;
-    min-height: max-content;
-  }
-  #es-rc #es-rc-content .es-features__title {
-    font-size: 32px;
-  }
-  #es-rc #es-rc-content .es-features__subtitle {
-    font-size: 22px;
-  }
-  #es-rc #es-rc-content .es-features__points {
-    font-size: 20px;
-  }
-  #es-rc #es-rc-content .es-features__shape {
-    padding: 0px 0px 0px 24px;
-    max-width: 305px;
-  }
-  #es-rc #es-rc-content .es-features__shape__text {
-    font-size: 14px;
-  }
-  #es-rc #es-rc-content .es-features__shape__text--number {
-    font-size: 48px;
-  }
-  #es-rc #es-rc-content .es-features__wrapper--top {
-    width: 50%;
-    max-width: 440px;
-  }
-  #es-rc #es-rc-content .es-features__wrapper--bottom {
-    width: 70%;
-    max-width: 600px;
-    margin-top: 48px;
-  }
-}
 #es-rc #es-rc-content .es-ingredients {
   position: relative;
   z-index: 1;
@@ -428,7 +369,7 @@
     margin-left: auto;
   }
 }
-@container es-rc-content (min-width: 768px) {
+@container es-rc-content (min-width: 730px) {
   #es-rc #es-rc-content .es-ingredients__list {
     justify-content: flex-end;
   }
@@ -503,7 +444,7 @@
     width: 55%;
   }
 }
-@container es-rc-content (min-width: 768px) {
+@container es-rc-content (min-width: 730px) {
   #es-rc #es-rc-content .es-benefits {
     min-height: 450px;
     padding: 32px;
@@ -568,7 +509,7 @@
     font-size: 20px;
   }
 }
-@container es-rc-content (min-width: 768px) {
+@container es-rc-content (min-width: 730px) {
   #es-rc #es-rc-content .es-formula-use__content {
     padding: 30px;
   }
@@ -656,7 +597,7 @@
     clip-path: polygon(57% 0%, 100% 0%, 100% 100%, 5% 100%);
   }
 }
-@container es-rc-content (min-width: 768px) {
+@container es-rc-content (min-width: 730px) {
   #es-rc #es-rc-content .es-packaging {
     flex-direction: row;
   }
@@ -746,7 +687,7 @@
 #es-rc #es-rc-content .es-cross__item__image-container:hover ~ .es-cross__item__button, #es-rc #es-rc-content .es-cross__item__image:hover ~ .es-cross__item__button {
   background-color: #46d7ac;
 }
-@container es-rc-content (min-width: 768px) {
+@container es-rc-content (min-width: 730px) {
   #es-rc #es-rc-content .es-cross__content {
     flex-direction: row;
     align-items: flex-start;
@@ -764,15 +705,21 @@
   #es-rc #es-rc-content .es-cross__item__image-container {
     width: 100%;
     height: 100%;
-    display: grid;
+    display: flex;
     align-items: flex-end;
     aspect-ratio: 1/1;
   }
   #es-rc #es-rc-content .es-cross__item__image--3 {
     max-height: 77%;
   }
+  #es-rc #es-rc-content .es-cross__item__text-step {
+    font-size: 20px;
+  }
+  #es-rc #es-rc-content .es-cross__item__text-name {
+    height: 3em;
+  }
   #es-rc #es-rc-content .es-cross__item__text-description {
-    height: 110px;
+    height: 9em;
   }
 }
 @container es-rc-content (min-width: 880px) {
@@ -786,4 +733,4 @@
 #es-rc #es-rc-content .es-disclaimer {
   font-size: 11px;
   margin-block: 40px;
-}/*# sourceMappingURL=styles.css.map */
+}
